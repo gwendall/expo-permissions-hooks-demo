@@ -4,6 +4,8 @@ import Constants from "expo-constants";
 import styled from 'styled-components'
 import usePermissions, { availablePermissions } from 'expo-permissions-hooks'
 
+console.log('Got available permissions.', availablePermissions)
+
 const Screen = ({ navigation }) => {
 	const permissions = {}
 	for (p of availablePermissions) {
